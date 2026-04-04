@@ -9,6 +9,7 @@ public class Velocity {
     private Direction direction;
 
     // No precondition in this case
+    @Requires({})
     @Ensures({"speed == 0", "speedX == 0", "speedY == 0", "direction == 0"})
     // initializes all properties to 0 as default values
     public Velocity() { //constructor
